@@ -10,6 +10,11 @@ PLATFORM=amlogic
 SOC=s905d
 BOARD=n1
 
+# 添加架构优先级信息
+sed -i '1i\
+arch aarch64_generic 10\n\
+arch aarch64_cortex-a53 15' repositories.conf
+
 # 让N1一直有wifi可用，以减少抱怨
 # 5.10(及以上)内核是否启用wifi  1:启用 0:禁用
 ENABLE_WIFI_K510=0
