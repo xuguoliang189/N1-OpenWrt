@@ -20,16 +20,7 @@ arch aarch64_cortex-a53 15' repositories.conf
 ENABLE_WIFI_K510=0
 
 SUBVER=$1
-# 定义所需安装的包列表 下列插件你都可以自行删减
-PACKAGES=""
-PACKAGES="$PACKAGES curl fdisk"
-PACKAGES="$PACKAGES luci-app-store"
-PACKAGES="$PACKAGES luci-app-unishare"
-PACKAGES="$PACKAGES luci-app-quickstart"
-PACKAGES="$PACKAGES luci-i18n-quickstart-zh-cn"
-PACKAGES="$PACKAGES luci-app-netwizard"
-PACKAGES="$PACKAGES luci-i18n-netwizard-zh-cn"
-PACKAGES="$PACKAGES luci-app-unishare"
+
 # Kernel image sources
 ###################################################################
 KERNEL_TAGS="stable"
